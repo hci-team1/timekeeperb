@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Feb 21 2014 04:58:08 GMT+0000 (UTC) -->
+<html data-wf-site="5300606dbecf5c650700012b">
+<head>
+  <meta charset="utf-8">
+  <title>Timekeeper -Today's Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/timekeeper-b.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Varela Round:400","Varela:400"]
+      }
+    });
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <link rel="apple-touch-icon" href="https://y7v4p6k4.ssl.hwcdn.net/51d2715929d9cfe03a000001/51e07282241660ce78000001_webclip-gallio.png">
+</head>
+<body>
+  <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container menu_bar" id="toppage">
+      <a class="w-nav-brand" href="homescreen">
+        <img class="menu_icon" src="images/hourglass.jpg" width="60">
+      </a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link menu_dropitem" href="homescreen">HOME</a><a class="w-nav-link menu_dropitem" href="faqs">FAQs</a><a class="w-nav-link menu_dropitem" href="about">ABOUT</a><a class="w-nav-link menu_dropitem" href="contactus">CONTACT US</a>
+      </nav>
+      <div class="w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <h1 class="company">TODAY'S &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SCHEDULE</h1>
+      <div class="currentschedule_description">Get on finishing your tasks for the day!&nbsp;</div>
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <div class="w-embed w-iframe google_calendar">
+        <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=2&amp;bgcolor=%23ccccff&amp;src=alextrantheeman%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles"
+        style=" border:solid 1px #777 " width="300" height="400" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <a class="w-inline-block top_of_page" href="#toppage">
+        <img class="top_page_img" src="images/up_arrow.png" width="40">
+      </a>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  
+  <!-- modal window for checking tasks -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.checktask-link').click(function() {
+        $('.checktask-background').fadeIn();
+      });
+      $('.close-checktask').click(function() {
+        $('.checktask-background').fadeOut();
+      });
+    });
+  </script>
+  <!-- modal window for checking tasks -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.checktasktime-link').click(function() {
+        $('.checktask-background').fadeIn();
+      });
+      $('.close-checktask').click(function() {
+        $('.checktask-background').fadeOut();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+	{
+		"taskname": "Work out at RIMAC",
+		"estimatedtime": "45 min",
+		"location": "RIMAC Gym",
+		"priority": "MEDIUM"
+	},
+	{
+		"taskname": "Study for COGS120 quiz",
+		"estimatedtime": "60 min",
+		"location": "Geisel Library",
+		"priority": "HIGH"
+	},
+	{
+		"taskname": "Call the ResLife office",
+		"estimatedtime": "15 min",
+		"location": "Earl's Market",
+		"priority": "LOW"
+	},
+	{
+		"taskname": "Meet with friends",
+		"estimatedtime": "30 min",
+		"location": "Library Walk",
+		"priority": "MEDIUM"
+	}
+]

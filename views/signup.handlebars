@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Feb 21 2014 04:58:08 GMT+0000 (UTC) -->
+<html data-wf-site="5300606dbecf5c650700012b">
+<head>
+  <meta charset="utf-8">
+  <title>Timekeeper - Signup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/timekeeper-b.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Varela Round:400","Varela:400"]
+      }
+    });
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <link rel="apple-touch-icon" href="https://y7v4p6k4.ssl.hwcdn.net/51d2715929d9cfe03a000001/51e07282241660ce78000001_webclip-gallio.png">
+</head>
+<body class="signup_body"><a class="title_link" href="/">SIGN UP</a> <!-- BLK -->
+  <div class="signup_description">Get back on track. Sign up today!</div>
+  <div class="w-form signup_form">
+    <form class="signup_form" name="email-form" data-name="Email Form">
+      <label class="signup_info" for="email">ENTER AN EMAIL ADDRESS:</label>
+      <input class="w-input signup_textfield" type="email" placeholder="ex. JoeJoe123@domain.com" name="email" data-name="Email" required="required"></input>
+      <label class="signup_info" for="name">ENTER A PASSWORD:</label>
+      <input class="w-input signup_textfield" type="password" placeholder="Enter your password" name="password" data-name="Password" required="required"></input>
+      <input class="w-button signup_submit" type="submit" value="SIGN UP" data-wait="Please wait..."></input>
+    </form>
+    <div class="w-form-done signup_success">
+      <p>Thank you signing up! You just took your first step towards productivity!</p><a class="signup_linkhome" href="homescreen">Go ahead and get started now!</a>
+    </div>
+    <div class="w-form-fail signup_error">
+      <p class="signup_errormessage">Oops! That username is already taken :(</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html data-wf-site="5300606dbecf5c650700012b">
+<head>
+  <meta charset="utf-8">
+  <!-- title of the url page -->
+  <title>Timekeeper - Current Tasks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- files from lab 5 -->
+  <link href="css/bootstrap.css" rel ="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+  <!-- files from webflow -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/timekeeper-b.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Varela Round:400","Varela:400"]
+      }
+    });
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <link rel="apple-touch-icon" href="https://y7v4p6k4.ssl.hwcdn.net/51d2715929d9cfe03a000001/51e07282241660ce78000001_webclip-gallio.png">
+</head>
+<body>
+
+  <!-- nav bar the top of the page -->
+  <div class="w-nav menu_navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container menu_bar" id="toppage">
+      <a class="w-nav-brand" href="homescreen.html">
+        <img class="menu_icon" src="images/hourglass.jpg" width="60">
+      </a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link menu_dropitem" href="homescreen">HOME</a><a class="w-nav-link menu_dropitem" href="faqs">FAQs</a><a class="w-nav-link menu_dropitem" href="about">ABOUT</a><a class="w-nav-link menu_dropitem" href="contactus">CONTACT US</a>
+      </nav>
+      <div class="w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- title of the page -->
+  <div>
+    <div class="w-container">
+      <h1 class="company">CURRENT TASKS</h1>
+      <div class="currtask_info">Go ahead! Tell us everything you need to do today and we'll do the rest.</div>
+    </div>
+  </div>
+
+  <!-- lists of tasks -->
+  <!-- add an each block for the tasks -->
+  {{#each tasks}} 
+  <!-- added an id for tasks -->
+  <div class="tasks" id="tasks{{id}}">
+    <div class="w-container"><a class="w-clearfix w-inline-block checktask-link" href="#"><h3 class="task_title">{{taskname}}</h3><p class="task_time"></p><p class="task_details">Time:&nbsp;{{estimatedtime}}<br>Location:&nbsp;{{location}}<br>Priority:&nbsp;{{priority}}</p></a>
+    </div>
+  </div>
+  {{/each}}
+
+  <!-- buttons at the bottom of the current task page -->
+  <div>
+    <div class="w-container addtask_container">
+      <div class="w-row">
+        <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button add_task" href="addtask">ADD TASK</a>
+        </div>
+        <div class="w-col w-col-6 w-col-tiny-6 curr_col2"><a class="button task_help modal-link" href="#">HOW TO (?)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <a class="w-inline-block top_of_page" href="#toppage">
+        <img class="top_page_img" src="images/up_arrow.png" width="40">
+      </a>
+    </div>
+  </div>
+
+  <!-- pop up box for check the details of a task -->
+  <!-- add an each block for the tasks -->
+  <!-- {{#each tasks}} -->
+  <!-- added an id for tasks -->
+  <div class="tasks" id="tasks{{id}}">
+    <div class="checktask-background">
+      <div class="w-clearfix checktask-window"><a class="close-checktask" href="#">CLOSE</a>
+        <ul class="w-list-unstyled">
+          <li>
+            <!-- <h4 class="checktask_h">NAME OF TASK:&nbsp;{{taskname}}</h4> -->
+            <h4 class="checktask_h">NAME OF TASK:&nbsp;WORK OUT AT RIMAC</h4>
+            <p class="task_input"></p>
+          </li>
+          <li>
+            <!-- <h4 class="checktask_h">TIME ESTIMATED TO COMPLETION:&nbsp;{{estimatedtime}}</h4> -->
+            <h4 class="checktask_h">TIME ESTIMATED TO COMPLETION:&nbsp;45 min</h4>
+            <p class="estimatedtime_input"></p>
+          </li>
+          <li>
+            <!-- <h4 class="checktask_h">LOCATION:&nbsp;{{location}}</h4> -->
+            <h4 class="checktask_h">LOCATION:&nbsp; RIMAC Gym</h4>
+            <p class="location_input"></p>
+          </li>
+          <li>
+            <!-- <h4 class="checktask_h">LEVEL OF PRIORITY:&nbsp;{{priority}}</h4> -->
+            <h4 class="checktask_h">LEVEL OF PRIORITY:&nbsp;MEDIUM</h4>
+            <p class="priority_input"></p>
+          </li>
+        </ul>
+        <div class="w-row">
+          <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button edit_task" href="addtask">EDIT TASK</a>
+          </div>
+          <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button checktask_delete confirm-link" href="#">DELETE TASK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- {{/each}} -->
+
+  <!-- pop up box for delete task confirmation -->
+  <div class="confirm-background">
+    <div class="w-clearfix confirm-window"><a class="close-confirm" href="#">CLOSE</a>
+      <p class="confirm_p">Are you sure?</p>
+      <div class="w-row">
+        <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a class="button confirm_yes" href="currenttask">YES</a>
+        </div>
+        <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a class="button confirm_no" href="currenttask">NO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- pop up box for how to add a task -->
+  <div class="modal-background">
+    <div class="w-clearfix modal-window"><a class="close-modal" href="#">CLOSE</a>
+      <div>
+        <div class="w-container howto_container">
+          <div class="contact_label">How to do this:</div>
+          <p class="contact_info">1. Click on "ADD TASK" and you'll be redirected.
+            <br>2. On the "ADD TASK" page, name the task, estimated time to finish, location of task, and priority.
+            <br>3. Add the task to the current schedule.
+            <br>4. You can view and edit your tasks here.
+            <br>5. Go to "TODAY'S SCHEDULE" to find when to complete your tasks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- adding script files from lab5 -->
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/timekeeper.js"></script>
+
+  <!-- script file for webflow -->
+  <script type="text/javascript" src="js/webflow.js"></script>
+
+  <!-- modal window for how to add task -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal-link').click(function() {
+        $('.modal-background').fadeIn();
+      });
+      $('.close-modal').click(function() {
+        $('.modal-background').fadeOut();
+      });
+    });
+  </script>
+
+  <!-- modal window for checking tasks -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.checktask-link').click(function() {
+        $('.checktask-background').fadeIn();
+      });
+      $('.close-checktask').click(function() {
+        $('.checktask-background').fadeOut();
+      });
+    });
+  </script>
+
+  <!-- modal window for checking tasks -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.checktasktime-link').click(function() {
+        $('.checktask-background').fadeIn();
+      });
+      $('.close-checktask').click(function() {
+        $('.checktask-background').fadeOut();
+      });
+    });
+  </script>
+
+  <!-- modal window for confirmation "are you sure" -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.confirm-link').click(function() {
+        $('.confirm-background').fadeIn();
+      });
+      $('.close-confirm').click(function() {
+        $('.confirm-background').fadeOut();
+      });
+    });
+  </script>
+
+</body>
+</html>
