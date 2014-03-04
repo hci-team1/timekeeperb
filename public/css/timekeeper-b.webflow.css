@@ -393,16 +393,16 @@ p {
     line-height: 17px;
   }
   .button.nav.login_button {
-    width: 80%;
-    height: 60px;
+    width: 95%;
+    height: 75px;
     margin-right: auto;
     margin-bottom: 15px;
     margin-left: auto;
-    padding: 16px 0px;
+    padding: 26px 0px 25px;
     border-radius: 0px;
     background-color: #131417;
     font-family: Oswald, sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     line-height: 21px;
     letter-spacing: 1px;
   }
@@ -420,10 +420,10 @@ p {
     letter-spacing: 0px;
   }
   .button.homescreen_button:active {
-    background-color: #a7b2cc;
+    background-color: #2a2c33;
   }
   .button.homescreen_button:focus {
-    background-color: #a7b2cc;
+    background-color: #2a2c33;
   }
   .button.logout_button {
     display: block;
@@ -437,17 +437,14 @@ p {
     font-size: 25px;
     font-weight: 400;
   }
-  .button.logout_button:hover {
-    background-color: #7685ad;
-  }
   .button.logout_button:active {
-    background-color: #7685ad;
+    background-color: #0d2f8c;
   }
   .button.add_task {
     width: 100%;
-    height: 55px;
+    height: 60px;
     margin: 10px auto 30px;
-    padding: 15px 0px;
+    padding: 18px 0px;
     border-radius: 0px;
     background-color: #00692d;
     font-family: Oswald, sans-serif;
@@ -461,16 +458,18 @@ p {
   }
   .button.cancel_button {
     width: 100%;
+    height: 55px;
     margin: -5px auto 10px;
-    padding: 12px 50px;
+    padding: 17px 50px 18px;
     border-radius: 0px;
     background-color: #b81121;
-    font-size: 18px;
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
     font-weight: 400;
     text-align: center;
   }
   .button.cancel_button:active {
-    background-color: #f04859;
+    background-color: #d61327;
   }
   .button.task_help {
     margin: 10px auto 30px;
@@ -485,9 +484,9 @@ p {
   }
   .button.task_help.modal-link {
     width: 100%;
-    height: 55px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 60px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     border-radius: 0px;
     background-color: #081f5e;
     font-family: Oswald, sans-serif;
@@ -571,7 +570,7 @@ p {
   .section.footer {
     margin-top: -20px;
     margin-bottom: 0px;
-    padding: 44px 0px 50px;
+    padding: 44px 0px 0px;
   }
   .company {
     display: block;
@@ -666,7 +665,7 @@ p {
   }
   .title_link {
     display: block;
-    margin: 20px 65px 5px 5px;
+    margin: 30px 65px 5px 15px;
     padding-bottom: 15px;
     font-family: Oswald, sans-serif;
     color: white;
@@ -682,6 +681,7 @@ p {
     padding-left: 10px;
   }
   .signup_info {
+    margin-top: 0px;
     margin-bottom: 5px;
     margin-left: 0px;
     padding-top: 0px;
@@ -704,11 +704,12 @@ p {
     color: black;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
   }
   .signup_submit {
     display: block;
     width: 100%;
+    height: 60px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -723,10 +724,10 @@ p {
     text-transform: uppercase;
   }
   .signup_submit:active {
-    background-color: #49e38b;
+    background-color: #008c3d;
   }
   .signup_description {
-    margin-left: 10px;
+    margin-left: 15px;
     padding-bottom: 35px;
     font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
     color: #a3a8b6;
@@ -748,8 +749,8 @@ p {
     margin-right: auto;
     margin-left: auto;
     padding: 1px 0px;
-    border-radius: 7px;
-    background-color: #c23e3e;
+    border-radius: 0px;
+    background-color: #b81121;
     opacity: 0.9;
     font-family:'Varela Round', sans-serif;
     color: white;
@@ -777,7 +778,7 @@ p {
   }
   .homescreen_description {
     display: block;
-    margin: 0px 15px 30px 10px;
+    margin: -10px 15px 30px 10px;
     padding-top: 5px;
     padding-left: 0px;
     font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
@@ -806,6 +807,7 @@ p {
     padding-bottom: 0px;
     border-radius: 0px;
     background-color: rgba(19, 20, 23, 0.90);
+    font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 255, 255, 0.90);
   }
   .menu_icon {
@@ -829,34 +831,31 @@ p {
   }
   .menu_dropitem {
     display: block;
-    margin: 2px auto;
+    margin: 5px auto;
     padding-top: 10px;
     padding-bottom: 10px;
     border: 0px solid #a3a8b6;
     border-radius: 0px;
     background-color: rgba(19, 20, 23, 0.90);
     opacity: 1;
-    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-family: Oswald, sans-serif;
     color: white;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0px;
     text-transform: none;
   }
-  .menu_dropitem:hover {
-    background-color: #5e6780;
-  }
   .menu_dropitem:active {
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-  .menu_dropitem:focus {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #2a2c33;
   }
   .menu_dropitem.w--current {
-    margin-top: 2px;
+    margin-top: 5px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 0px;
   }
   .menu_dropitem.w--current:active {
-    background-color: #7782a1;
+    margin-bottom: 2px;
+    background-color: #2a2c33;
   }
   .menu_dropitem.w--current:focus {
     background-color: #6e7996;
@@ -964,7 +963,7 @@ p {
   .settings_savechanges {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 55px;
     margin: 15px auto -5px;
     padding-right: 35px;
     padding-left: 35px;
@@ -975,11 +974,8 @@ p {
     letter-spacing: -1px;
     text-indent: 0px;
   }
-  .settings_savechanges:hover {
-    background-color: #4ce08c;
-  }
   .settings_savechanges:active {
-    background-color: #4ce08c;
+    background-color: #008c3d;
   }
   .about_section {
     display: block;
@@ -1071,7 +1067,7 @@ p {
     font-size: 24px;
     line-height: 30px;
     text-align: left;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
   }
   .contact_pic {
     display: block;
@@ -1115,6 +1111,7 @@ p {
   .addtask_submit {
     display: block;
     width: 100%;
+    height: 55px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -1122,14 +1119,14 @@ p {
     padding-left: 20px;
     border-radius: 0px;
     background-color: #00692d;
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
     font-weight: 400;
     letter-spacing: -1px;
     text-transform: uppercase;
   }
   .addtask_submit:active {
-    background-color: #51f096;
+    background-color: #008c3d;
   }
   .thank_you {
     border-radius: 7px;
@@ -1269,13 +1266,13 @@ p {
   .slider_heading {
     display: block;
     margin: 2px 5px 0px;
-    font-family: Oswald, sans-serif;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     text-align: center;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
   }
   .check_col1 {
     display: block;
@@ -1294,6 +1291,7 @@ p {
     text-align: center;
   }
   .top_of_page {
+    margin-top: 10px;
     float: right;
   }
   .top_page_img {
@@ -1311,11 +1309,11 @@ p {
   }
   .close-form {
     margin-top: -15px;
-    margin-bottom: 0px;
-    font-family: Varela, sans-serif;
-    color: white;
-    font-size: 11px;
-    letter-spacing: -1px;
+    margin-bottom: 1px;
+    font-family: Oswald, sans-serif;
+    color: #a3a8b6;
+    font-size: 17px;
+    letter-spacing: 0px;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -1325,10 +1323,10 @@ p {
     margin-left: 0px;
     padding-bottom: 0px;
     float: right;
-    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-family: Oswald, sans-serif;
     color: #a3a8b6;
-    font-size: 15px;
-    letter-spacing: -1px;
+    font-size: 17px;
+    letter-spacing: 0px;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -1409,7 +1407,7 @@ p {
     float: right;
     font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
     color: #a3a8b6;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 15px;
     text-align: left;
     letter-spacing: 0px;
@@ -1418,7 +1416,7 @@ p {
   .task_title {
     display: block;
     width: 75%;
-    margin: 2px auto 0px;
+    margin: 2px auto;
     padding-right: 5px;
     padding-left: 5px;
     float: right;
@@ -1439,5 +1437,19 @@ p {
   .menu_button.w--open {
     border-radius: 0px;
     background-color: #131417;
+  }
+  .nav-menu {
+    background-color: #131417;
+  }
+  .menu-button.w--open {
+    background-color: transparent;
+  }
+  .signup_info1 {
+    margin-top: 15px;
+    font-family: Oswald, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }
