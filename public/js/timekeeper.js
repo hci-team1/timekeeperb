@@ -32,5 +32,16 @@ function initializePage() {
 			window.location.href = '/';
 		});
 	});
+
+	// register a click handler
+	$(".homescreen_button").click(likeClick);
+}
+
+function likeClick(e) {
+	// prevent page from reloading
+	e.preventDefault();
+	
+	// record a Google Analytics event
+	ga('send', 'event', 'like', 'click');
 }
 
