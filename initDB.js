@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 var models = require('./models');
 
 // Connect to the Mongo database, whether locally or on Heroku
-var local_database_name = 'timekeeper';
+var local_database_name = 'timekeeper-b';
 var local_database_uri  = 'mongodb://localhost/' + local_database_name
 var database_uri = process.env.MONGOLAB_URI || local_database_uri
 mongoose.connect(database_uri);

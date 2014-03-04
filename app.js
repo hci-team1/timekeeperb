@@ -25,7 +25,7 @@ var currenttask = require('./routes/currenttask');	// this is the tasks page
 var homescreen = require('./routes/homescreen');	// this is the homescreen
 
 ////////// connect to the mongo database //////////
-var local_database_name = 'timekeeper';
+var local_database_name = 'timekeeper-b';
 var local_database_uri  = 'mongodb://localhost/' + local_database_name
 var database_uri = process.env.MONGOLAB_URI || local_database_uri
 mongoose.connect(database_uri);
