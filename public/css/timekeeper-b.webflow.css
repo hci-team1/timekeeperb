@@ -562,6 +562,38 @@ p {
   .button.edit_task:active {
     background-color: #5a7cdb;
   }
+  .button.logout_yes {
+    width: 100%;
+    height: 45px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 0px;
+    float: none;
+    border-radius: 0px;
+    background-color: #081f5e;
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .button.logout_yes:active {
+    background-color: #0d2f8c;
+  }
+  .button.logout_no {
+    width: 100%;
+    height: 45px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 0px;
+    float: none;
+    border-radius: 0px;
+    background-color: #00692d;
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .button.logout_no:active {
+    background-color: #008c3d;
+  }
   .section {
     padding-right: 11px;
   }
@@ -1488,5 +1520,35 @@ p {
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
+  }
+  .logout-background {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 65px;
+    z-index: 3;
+    display: none;
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    background-color: #131417;
+    opacity: 0.99;
+  }
+  .logout-window {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+  .logout_text {
+    margin-top: 5px;
+    padding-top: 0px;
+    font-family: Oswald, sans-serif;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    text-transform: none;
   }
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- title of the url page -->
-  <title>Timekeeper - Current Tasks</title>
+  <title>Timekeeper - TO-DOs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- files from lab 5 -->
@@ -49,7 +49,7 @@
   <!-- title of the page -->
   <div>
     <div class="w-container">
-      <h1 class="company">CURRENT TASKS</h1>
+      <h1 class="company">TO-DOs</h1>
       <div class="currtask_info">Go ahead! Tell us everything you need to do today and we'll do the rest.</div>
     </div>
   </div>
@@ -68,7 +68,7 @@
   <div>
     <div class="w-container addtask_container">
       <div class="w-row">
-        <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button add_task" href="addtask">ADD TASK</a>
+        <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button add_task" href="addtask">ADD TO-DO</a>
         </div>
         <div class="w-col w-col-6 w-col-tiny-6 curr_col2"><a class="button task_help modal-link" href="#">HOW TO (?)</a>
         </div>
@@ -93,7 +93,7 @@
         <ul class="w-list-unstyled">
           <li>
             <!-- <h4 class="checktask_h1">NAME OF TASK:&nbsp;{{taskname}}</h4> -->
-            <h4 class="checktask_h1">NAME OF TASK:&nbsp;WORK OUT AT RIMAC</h4>
+            <h4 class="checktask_h1">TO-DO:&nbsp;WORK OUT AT RIMAC</h4>
             <p class="task_input"></p>
           </li>
           <li>
@@ -113,9 +113,9 @@
           </li>
         </ul>
         <div class="w-row">
-          <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button edit_task" href="addtask">EDIT TASK</a>
+          <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button edit_task" href="addtask">EDIT TO-DO</a>
           </div>
-          <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button checktask_delete confirm-link" href="#">DELETE TASK</a>
+          <div class="w-col w-col-6 w-col-tiny-6 check_col"><a class="button checktask_delete confirm-link" href="#">DELETE TO-DO</a>
           </div>
         </div>
       </div>
@@ -142,11 +142,11 @@
       <div>
         <div class="w-container howto_container">
           <div class="contact_label">How to do this:</div>
-          <p class="contact_info">1. Click on "ADD TASK" and you'll be redirected.
-            <br>2. On the "ADD TASK" page, name the task, estimated time to finish, location of task, and priority.
-            <br>3. Add the task to the current schedule.
-            <br>4. You can view and edit your tasks here.
-            <br>5. Go to "TODAY'S SCHEDULE" to find when to complete your tasks.</p>
+          <p class="contact_info">1. Click on "ADD TO-DO" and you'll be redirected.
+            <br>2. On the "ADD TO-DO" page, name the to-do, estimated time to finish, location of to-do, and priority.
+            <br>3. Add the to-do to the current schedule.
+            <br>4. You can view and edit your to-dos here.
+            <br>5. Go to "DAILY CALENDAR" to find when to complete your to-dos.</p>
         </div>
       </div>
     </div>
@@ -160,45 +160,34 @@
   <!-- script file for webflow -->
   <script type="text/javascript" src="js/webflow.js"></script>
 
-  <!-- modal window for how to add task -->
+  <!-- scripts for pop up windows -->
   <script type="text/javascript">
     $(document).ready(function() {
+      // modal window for checking tasks
       $('.modal-link').click(function() {
         $('.modal-background').fadeIn();
       });
       $('.close-modal').click(function() {
         $('.modal-background').fadeOut();
       });
-    });
-  </script>
 
-  <!-- modal window for checking tasks -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for checking tasks
       $('.checktask-link').click(function() {
         $('.checktask-background').fadeIn();
       });
       $('.close-checktask').click(function() {
         $('.checktask-background').fadeOut();
       });
-    });
-  </script>
 
-  <!-- modal window for checking tasks -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for checking tasks
       $('.checktasktime-link').click(function() {
         $('.checktask-background').fadeIn();
       });
       $('.close-checktask').click(function() {
         $('.checktask-background').fadeOut();
       });
-    });
-  </script>
 
-  <!-- modal window for confirmation "are you sure" -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for confirming the delete task
       $('.confirm-link').click(function() {
         $('.confirm-background').fadeIn();
       });
@@ -207,6 +196,5 @@
       });
     });
   </script>
-
 </body>
 </html>

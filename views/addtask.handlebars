@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- title of the url page -->
-  <title>Timekeeper - Add Task</title>
+  <title>Timekeeper - Add TO-DO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
@@ -43,7 +43,7 @@
   <!-- title of the page -->
   <div>
     <div class="w-container">
-      <h1 class="company">ADD TASK</h1>
+      <h1 class="company">ADD TO-DO</h1>
       <div class="currtask_info">Go ahead! Tell us everything you need to do today and we'll do the rest.</div>
     </div>
   </div>
@@ -52,7 +52,7 @@
   <div>
     <div class="w-form">
       <form id="new-task-form" method='post' action='/currenttask' class="addtask_form" name="email-form" data-name="Email Form" data-redirect="/currenttask">
-        <label class="signup_info" for="taskName">NAME OF TASK:</label>
+        <label class="signup_info" for="taskName">TO-DO:</label>
         <input class="w-input signup_textfield" type="text" id="taskName" data-name="Name of task" required="required"></input>
         <label class="signup_info" for="estimatedtime">ESTIMATED TIME OF COMPLETION:</label>
         <select class="w-select signup_textfield" id="estimatedtime" name="dropdown" required="required">
@@ -77,7 +77,7 @@
         <!-- link to expand page, see more task options -->
         <div class="w-clearfix"><a class="form-link" href="#">See more</a>
         </div>
-        <input class="w-button addtask_submit" type="submit" value="ADD TO TASK LIST" data-wait="Please wait..."></input>
+        <input class="w-button addtask_submit" type="submit" value="ADD TO-DO" data-wait="Please wait..."></input>
       </form>
 
       <!-- sucess and error message -->
@@ -100,7 +100,7 @@
     <div class="w-container currtask_container"></div>
   </div>
 
-  <!-- button to scroll up to top of page -->
+  <!-- button to scroll up to top of page 
   <div>
     <div class="w-container">
       <a class="w-inline-block top_of_page" href="#toppage">
@@ -108,50 +108,16 @@
       </a>
     </div>
   </div>
+  -->
 
   <!-- script files provided by webflow -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
 
-  <!-- modal window for checking tasks -->
+  <!-- scripts for pop up windows -->
   <script type="text/javascript">
     $(document).ready(function() {
-      $('.checktask-link').click(function() {
-        $('.checktask-background').fadeIn();
-      });
-      $('.close-checktask').click(function() {
-        $('.checktask-background').fadeOut();
-      });
-    });
-  </script>
-
-  <!-- modal window for checking tasks -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.checktasktime-link').click(function() {
-        $('.checktask-background').fadeIn();
-      });
-      $('.close-checktask').click(function() {
-        $('.checktask-background').fadeOut();
-      });
-    });
-  </script>
-
-  <!-- modal window for confirmation "are you sure" -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.confirm-link').click(function() {
-        $('.confirm-background').fadeIn();
-      });
-      $('.close-confirm').click(function() {
-        $('.confirm-background').fadeOut();
-      });
-    });
-  </script>
-
-  <!-- modal window for see more add task options -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for "see more"
       $('.form-link').click(function() {
         $('.form-background').fadeIn();
       });
@@ -160,6 +126,5 @@
       });
     });
   </script>
-
 </body>
 </html>
