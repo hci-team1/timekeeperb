@@ -36,8 +36,15 @@ var models = require('../models');
  	function addCallback(err) {
 		if(err) console.log(err);
 
+		models.Tasks
+ 		  .find().exec(showTask);
 		// must send an OK response
-		res.send();
+		
+ 	}
+
+ 	function showTask(err, tasks){
+ 		console.log(tasks);
+ 		res.render('currenttask', {'tasks' : tasks});
  	}
  }
 
