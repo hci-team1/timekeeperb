@@ -34,7 +34,9 @@ function initializePage() {
 	});*/
 
 	// register a click handler
-	$(".homemenu").click(likeClick);
+	$("#home1").click(likeClick);
+	$("#home2").click(likeClick);
+	$("#home3").click(likeClick);
 }
 
 function likeClick(e) {
