@@ -5,8 +5,7 @@ var models = require('../models');
  */
 
  exports.view = function(req, res) {
- 	res.render('currenttask');
-/* 	models.Tasks
+	models.Tasks
  		.find()
  		.exec(renderTasks);
 
@@ -14,10 +13,9 @@ var models = require('../models');
  		res.render('currenttask', { 'tasks' : tasks});
 
  		console.log(tasks);
- 	}*/
  };
 
-/* exports.addTasks = function(req, res) {
+ exports.addTasks = function(req, res) {
  	//res.render('currenttask');	// CHANGE THIS
 
  	var task_data = req.body;
@@ -64,4 +62,4 @@ var models = require('../models');
  		// must send an OK resposne w/ res.send();
  		res.send();
  	}
- }*/
+ }
