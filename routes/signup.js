@@ -7,6 +7,6 @@
 	res.render('signup');
  }
 
- exports.signupUser = function(req, res) {
+/* exports.signupUser = function(req, res) {
  	res.render('signup');	// CHANGE THIS
- }
+ }*/

@@ -7,6 +7,6 @@
  	res.render('todayschedule');
  }
 
- exports.showSchedule = function(req, res) {
+/* exports.showSchedule = function(req, res) {
  	res.render('todayschedule');	// CHANGE THIS
- }
+ }*/

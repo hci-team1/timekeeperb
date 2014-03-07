@@ -7,6 +7,6 @@
  	res.render('loginpage');
  }
 
- exports.loginUser = function(req, res) {
+/* exports.loginUser = function(req, res) {
  	res.render('loginpage');	// change this
- }
+ }*/

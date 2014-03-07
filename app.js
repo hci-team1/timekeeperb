@@ -61,23 +61,23 @@ app.get('/contactus', contactus.view);		// (change so you can submit too)
 app.get('/faqs', faqs.view);				// just view the faqs page
 
 app.get('/loginpage', loginpage.view);		// just view the login page
-app.get('/loginpage', loginpage.loginUser);	// IMPLEMENT THIS 
+//app.get('/loginpage', loginpage.loginUser);	// IMPLEMENT THIS 
 
 app.get('/settings', settings.view);		// just view the settings page
 
 app.get('/signup', signup.view);			// just view the signup page
-app.get('/signup', signup.signupUser);	// IMPLEMENT THIS
+//app.get('/signup', signup.signupUser);	// IMPLEMENT THIS
 
 app.get('/todayschedule', todayschedule.view);	// change this?
-app.post('/todayschedule', todayschedule.showSchedule);	// IMPLEMENT THIS
+//app.post('/todayschedule', todayschedule.showSchedule);	// IMPLEMENT THIS
 
 app.get('/addtask', addtask.view);			// change this too so you can add
 
 app.get('/currenttask', currenttask.view);	// change this too
-app.post('/currenttask', currenttask.addTasks);		// IMPLEMENT THIS
+//app.post('/currenttask', currenttask.addTasks);		// IMPLEMENT THIS
 
 //TODO fix post url conflict
-app.post('/currenttask/deleted', currenttask.deleteTasks);	// IMPLEMENT THIS
+//app.post('/currenttask/deleted', currenttask.deleteTasks);	// IMPLEMENT THIS
 
 app.get('/homescreen', homescreen.view);	// view the homescreen
 
