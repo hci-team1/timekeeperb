@@ -27,14 +27,14 @@ function initializePage() {
 	// 	});
 	// });
 
-	$('.confirm_yes').click(function(e) {
+	/*$('.confirm_yes').click(function(e) {
 		$.post('/currenttask/deleted', function() {
 			window.location.href = '/';
 		});
-	});
+	});*/
 
 	// register a click handler
-	$("#homescreen_button").click(likeClick);
+	$(".homescreen_button").click(likeClick);
 }
 
 function likeClick(e) {

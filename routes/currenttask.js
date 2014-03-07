@@ -39,7 +39,6 @@ var models = require('../models');
 		models.Tasks
  		  .find().exec(showTask);
 		// must send an OK response
-		
  	}
 
  	function showTask(err, tasks){
